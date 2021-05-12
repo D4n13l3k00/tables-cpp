@@ -15,11 +15,11 @@ void tline(int width,
 ##### Examples:
 
 ```cpp
-tline(4, 2);
+tline(4, 4);
 ttable(4, list<string>{"1", "22", "333", "4444"}, false)
-tline(4, 2);
+tline(4, 4);
 ttable(4, list<string>{"1", "22", "333", "4444"}, true)
-tline(4, 2);
+tline(4, 4);
 // Output: 
 // |------|------|------|------|
 // |    1 |   22 |  333 | 4444 |
