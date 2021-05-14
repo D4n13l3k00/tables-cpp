@@ -9,8 +9,7 @@ void ttable(
     bool toleft);
 
 void tline(
-    std::vector<int> width,
-    int columns);
+    std::vector<int> width);
 ```
 
 [Example](/example.cpp)
