@@ -1,24 +1,27 @@
 #include <iostream>
-#include <list>
 #include <iomanip>
-#include <string> 
+#include <string>
+#include <vector>
 
-void ttable(int width,
-    std::list<std::string> columns,
-    bool toleft) {
+void ttable(std::vector<int> width, std::vector<std::string> columns, bool toleft) {
+    if(width.size() != columns.size()) {
+        std::cout << "[Tables::ttable] Sizes `width` and `columns` not matched!" << std::endl;
+        return;
+    }
     std::cout << "| ";
-    for(std::string str : columns) {
-        std::cout << std::setw(width);
+    for(int i = 0; i < width.size(); i++) {
+        std::cout << std::setw(width[i]);
         if (toleft) { std::cout << std::left; }
-        std::cout << str << std::setw(3) << " | ";
+        else {std::cout << std::right; }
+        std::cout << columns[i] << std::setw(3) << " | ";
     }
     std::cout << std::endl;
 }
-void tline(int width, int columns) {
+void tline(std::vector<int> width) {
     std::cout << "|";
-    for(int x = 0; x != columns; x++) {
+    for(int x = 0; x < width.size(); x++) {
         std::cout
-            << std::string(width+2, '-')
+            << std::string(width[x]+2, '-')
             << "|";
     }
     std::cout << std::endl;

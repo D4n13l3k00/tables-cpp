@@ -1,14 +1,16 @@
 #ifndef TABLE_H
 #define TABLE_H
 #include <iostream>
-#include <list>
 #include <iomanip>
-#include <string> 
+#include <string>
+#include <vector>
 
 void ttable(
-    int width, std::list<std::string> columns,
+    std::vector<int> width,
+    std::vector<std::string> columns,
     bool toleft);
-void tline(int width,
-int columns);
+
+void tline(
+    std::vector<int> width);
 
 #endif
