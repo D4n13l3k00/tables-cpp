@@ -1,3 +1,6 @@
+// Copyright 2021 D4n13l3k00.
+// SPDX-License-Identifier: MIT
+
 #include <iostream>
 #include <iomanip>
 #include <string>

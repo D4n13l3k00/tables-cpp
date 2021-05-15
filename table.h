@@ -1,3 +1,6 @@
+// Copyright 2021 D4n13l3k00.
+// SPDX-License-Identifier: MIT
+
 #ifndef TABLE_H
 #define TABLE_H
 #include <iostream>
